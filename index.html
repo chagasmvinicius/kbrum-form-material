@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KBrum! Studio - Material para o Marketing</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a href="http://kbrumstudio.com.br/#inicial" target="_blank">
+          <img src="./images/kbrum_logo.png" />
+        </a>
+        <h1 class="title">Material para o Marketing Digital</h1>
+      </div>
+
+      <div class="spacer"></div>
+
+      <form>
+        <!-- Campo: Selecione o formato do material -->
+        <section>
+          <label for="formato-material">Selecione o formato do material:</label>
+          <br />
+          <select
+            id="formato-material"
+            name="formato-material"
+            required
+            oninvalid="this.setCustomValidity('Por favor, preencha o campo.')"
+            oninput="this.setCustomValidity('')"
+          >
+            <option value="">Nenhum(a)</option>
+            <option value="opcao1">Arte única</option>
+            <option value="opcao2">Carrossel</option>
+            <option value="opcao3">Vídeo - Reels</option>
+            <option value="opcao4">Storie</option>
+            <option value="opcao5">Artigo do site</option>
+          </select>
+        </section>
+
+        <section>
+          <!-- Campo: É uma data comemorativa? -->
+          <label for="e-uma-data-comemorativa">É uma data comemorativa?</label>
+          <br />
+          <select
+            id="e-uma-data-comemorativa"
+            name="e-uma-data-comemorativa"
+            required
+            oninvalid="this.setCustomValidity('Por favor, preencha o campo.')"
+            oninput="this.setCustomValidity('')"
+          >
+            <option value="">Nenhum(a)</option>
+            <option value="opcao1">Sim</option>
+            <option value="opcao2">Não</option>
+          </select>
+        </section>
+
+        <section>
+          <!-- Campo: Se sim, qual é a data? -->
+          <label for="qual-data-comemorativa">Se sim, qual é a data?</label>
+          <br />
+          <input
+            type="date"
+            id="qual-data-comemorativa"
+            name="qual-data-comemorativa"
+            required
+            oninvalid="this.setCustomValidity('Por favor, preencha o campo.')"
+            oninput="this.setCustomValidity('')"
+          />
+        </section>
+
+        <section>
+          <!-- Campo: Qual será o título do material? -->
+          <label for="titulo-material">Qual será o título do material?</label>
+          <br />
+          <textarea
+            id="titulo-material"
+            required
+            oninvalid="this.setCustomValidity('Por favor, preencha o campo.')"
+            oninput="this.setCustomValidity('')"
+          ></textarea>
+        </section>
+
+        <section>
+          <label for="legenda-material">Qual será a legenda do material?</label>
+          <br />
+          <textarea
+            id="legenda-material"
+            maxlength="1700"
+            required
+            oninvalid="this.setCustomValidity('Por favor, preencha o campo.')"
+            oninput="this.setCustomValidity('')"
+          ></textarea>
+          <br />
+          <label id="warning-legenda"
+            >Limite de 1.700 caracteres (incluindo referências)</label
+          >
+        </section>
+
+        <section>
+          <!-- Campo: Observações -->
+          <label for="observacoes">Observações:</label>
+          <br />
+          <textarea id="observacoes"></textarea>
+        </section>
+
+        <!-- Campo: Adicione um anexo -->
+        <section>
+          <label for="anexo">Escolha um arquivo para anexar:</label>
+          <br />
+          <input type="file" id="anexo" title="ABC" value="XPO" />
+        </section>
+
+        <!-- Botão "Enviar" -->
+        <input type="submit" class="submit-btn" value="Enviar" />
+      </form>
+
+      <div class="spacer"></div>
+
+      <div>
+        <p class="footer">
+          © <span id="ano"></span> Kbrum! Studio. All rights reserved.
+        </p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var anoAtual = new Date().getFullYear();
+      document.getElementById("ano").textContent = anoAtual;
+    </script>
+  </body>
+</html>

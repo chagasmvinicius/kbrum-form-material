@@ -1,0 +1,134 @@
+body {
+    background-image: url('http://kbrumstudio.com.br/wp-content/uploads/2022/11/cropped-cropped-Design-sem-nome-31-1.png');
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 100% 100%;
+
+    color: #373436;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.container {
+    border: 1px solid #373436;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+img {
+    padding-top: 10px;
+    width: 170px;
+    height: 80px;
+}
+
+.header {
+    display: flex;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    padding-top: 25px;
+    padding-left: 30px;
+    width: 50%;
+}
+
+.spacer {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #373436;
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section {
+    border-radius: 10px;
+    border: 1px solid #373436;
+    padding: 15px 100px;
+    margin: 20px;
+}
+
+form {
+    display: inline-grid;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea,
+select,
+input {
+    background-color: rgba(248, 194, 25, 0.3);
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid #373436;
+    border-radius: 5px;
+    padding: 5px;
+    resize: both;
+}
+
+select,
+input {
+    resize: none;
+}
+
+textarea:hover,
+select:hover {
+    border: 1px solid #f8c219;
+}
+
+#warning-legenda {
+    margin-top: 10px !important;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}
+
+input[type="file"] {
+    display: flex;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+}
+
+.submit-btn {
+    margin-left: 35%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #f8c219;
+    color: #373436;
+    border: 1px solid #373436;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn:hover {
+    background-color: #373436;
+    color: #f8c219;
+    border: 1px solid #373436;
+}
+
+.footer {
+    padding-bottom: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #373436;
+}
