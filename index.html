@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KBrum! Studio - Material para o Marketing</title>
-    <link rel="shortcut icon" href="./images/favicon1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon2.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -33,11 +33,11 @@
             oninput="this.setCustomValidity('')"
           >
             <option value="">Nenhum(a)</option>
-            <option value="opcao1">Arte única</option>
-            <option value="opcao2">Carrossel</option>
-            <option value="opcao3">Vídeo - Reels</option>
-            <option value="opcao4">Storie</option>
-            <option value="opcao5">Artigo do site</option>
+            <option value="Arte única">Arte única</option>
+            <option value="Carrossel">Carrossel</option>
+            <option value="Vídeo - Reels">Vídeo - Reels</option>
+            <option value="Storie">Storie</option>
+            <option value="Artigo do site">Artigo do site</option>
           </select>
         </section>
 
@@ -53,8 +53,8 @@
             oninput="this.setCustomValidity('')"
           >
             <option value="">Nenhum(a)</option>
-            <option value="opcao1">Sim</option>
-            <option value="opcao2">Não</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
           </select>
         </section>
 
@@ -111,11 +111,11 @@
         <section>
           <label for="anexo">Escolha um arquivo para anexar:</label>
           <br />
-          <input type="file" id="anexo" title="ABC" value="XPO" />
+          <input type="file" id="anexo" multiple/>
         </section>
 
         <!-- Botão "Enviar" -->
-        <input type="submit" class="submit-btn" value="Enviar" />
+        <input type="submit" class="submit-btn" value="Enviar" onclick="formSubmit(event)"/>
       </form>
 
       <div class="spacer"></div>
@@ -131,5 +131,6 @@
       var anoAtual = new Date().getFullYear();
       document.getElementById("ano").textContent = anoAtual;
     </script>
+    <script src="./scripts/server.js"></script>
   </body>
 </html>
