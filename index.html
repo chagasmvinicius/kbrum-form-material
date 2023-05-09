@@ -20,7 +20,7 @@
 
       <div class="spacer"></div>
 
-      <form>
+      <form id="form">
         <!-- Campo: Selecione o formato do material -->
         <section>
           <label for="formato-material">Selecione o formato do material:</label>
@@ -43,11 +43,11 @@
 
         <section>
           <!-- Campo: É uma data comemorativa? -->
-          <label for="e-uma-data-comemorativa">É uma data comemorativa?</label>
+          <label for="e-dt-comemorativa">É uma data comemorativa?</label>
           <br />
           <select
-            id="e-uma-data-comemorativa"
-            name="e-uma-data-comemorativa"
+            id="e-dt-comemorativa"
+            name="e-dt-comemorativa"
             required
             oninvalid="this.setCustomValidity('Por favor, preencha o campo.')"
             oninput="this.setCustomValidity('')"
@@ -60,12 +60,12 @@
 
         <section>
           <!-- Campo: Se sim, qual é a data? -->
-          <label for="qual-data-comemorativa">Se sim, qual é a data?</label>
+          <label for="dt-comemorativa">Se sim, qual é a data?</label>
           <br />
           <input
             type="date"
-            id="qual-data-comemorativa"
-            name="qual-data-comemorativa"
+            id="dt-comemorativa"
+            name="dt-comemorativa"
             required
             oninvalid="this.setCustomValidity('Por favor, preencha o campo.')"
             oninput="this.setCustomValidity('')"
@@ -85,6 +85,7 @@
         </section>
 
         <section>
+          <!-- Campo: Qual será a legenda do material? -->
           <label for="legenda-material">Qual será a legenda do material?</label>
           <br />
           <textarea
@@ -115,7 +116,7 @@
         </section>
 
         <!-- Botão "Enviar" -->
-        <input type="submit" class="submit-btn" value="Enviar" onclick="formSubmit(event)"/>
+        <input type="submit" class="submit-btn" value="Enviar"/>
       </form>
 
       <div class="spacer"></div>
@@ -131,6 +132,6 @@
       var anoAtual = new Date().getFullYear();
       document.getElementById("ano").textContent = anoAtual;
     </script>
-    <script src="./scripts/server.js"></script>
+    <script type="module" src="./scripts/app.js"></script>
   </body>
 </html>
